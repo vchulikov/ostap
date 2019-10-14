@@ -1,6 +1,6 @@
 from ROOT import *
 import ostap.fitting.models as Models
-import ostap.fitting.basic as Am
+#import ostap.fitting.basic as Am
 
 #data-file
 
