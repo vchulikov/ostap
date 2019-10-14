@@ -5,7 +5,7 @@ dbname = 'data.ds'
 f = open(dbname, 'r')
 
 #create root - file
-tree = TFile('data.root','RECREATE')
+tree = TFile('db.root','RECREATE')
 
 #create hist
 h1f = TH1F( 'hist', 'hist', 1000, 2.43, 2.5 )
