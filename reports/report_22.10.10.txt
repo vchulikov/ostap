@@ -1,5 +1,3 @@
-#some stuff for latex
-
 help(ostap.fitting.models) -> function
 
 
