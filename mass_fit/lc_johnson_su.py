@@ -4,14 +4,14 @@ from   ostap.histos.histos  import h1_axis
 from Functions import *
 
 
-im = ROOT.RooRealVar ('im'   , 'im'                 ,  2.42 , 2.52 )
-pk = ROOT.RooRealVar ('pk'   , 'peak   '   , 2.2875 ,  2.46 , 2.48 )
-gam = ROOT.RooRealVar ('gamma'   , 'gamma'     , 1. ,  0. , 1.5 )
-delt = ROOT.RooRealVar ('delta'   , 'delta' , 0.0000 , 0.000 , 20.000 )
+im   = ROOT.RooRealVar ('im'      , 'im'            ,  2.42 , 2.52 )
+pk   = ROOT.RooRealVar ('pk'      , 'peak'  , 2.47  ,  2.46 , 2.48 )
+gam  = ROOT.RooRealVar ('gamma'   , 'gamma' , 1.    ,    0. , 1.5 )
+delt = ROOT.RooRealVar ('delta'   , 'delta' , 0.    ,    0. , 20.0 )
 
 
 sig_ap = Models.JohnsonSU_pdf( 'sig_ap', xvar=im, xi = pk, lambd = None, delta = delt, gamma=gam)
-bkg0  = Models.Bkg_pdf ( 'bkg0' , xvar = im , power = 1. )
+bkg0   = Models.Bkg_pdf ( 'bkg0' , xvar = im , power = 1. )
 
 
 if __name__=="__main__":
