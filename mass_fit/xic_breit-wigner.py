@@ -15,7 +15,7 @@ bkg0  = Models.Bkg_pdf ( 'bkg0' , xvar = im , power = 0. )
 
 if __name__=="__main__":
     model = Models.Fit1D   ( signal = sig_ap , background = bkg0 )
-    rfile = ROOT.TFile("test_xic_100invpb.root","READ")
+    rfile = ROOT.TFile("dataset.root","READ")
     ds = rfile["da_lc"]
     ds = ds.reduce("im > 2.42 && im < 2.52")
     dh = ( ds.reduce( ROOT.RooArgSet( im ) , "im>0" ) ).binnedClone()
