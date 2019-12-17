@@ -2,8 +2,6 @@ import ostap.fitting.models as Models
 from   ostap.utils.timing import timing
 from   ostap.histos.histos  import h1_axis
 import ROOT
-#?
-models = set()
 
 def fit_2d() :
     #variable inizialization
