@@ -91,3 +91,4 @@ if __name__ == "__main__" :
  #bins hist
  h_canvas.cd(1)
  r_val.Draw("text e col")
+ h_canvas.Update()
