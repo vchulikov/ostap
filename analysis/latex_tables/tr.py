@@ -15,4 +15,4 @@ if __name__ == "__main__" :
    print(str("\hline"))
    print("\multicolumn{5}{c}{$y\in$~(" + str(data[i + 1, 1]) + "," + str(data[i + 1, 2])+ ")}" + "\\" + "\\")
    print(str("\hline"))
-  print("(" + str(data[i + 1, 3]) +"," + str(data[i + 1, 4]) + ") & " + srtformat.format(r) + " & " + srtformat.format(se1_val)+ "~$\pm$  " + srtformat.format(se1_err) +" & " + srtformat.format(se0) + " & " + srtformat.format(se2) +"\\" + "\\" )
+  print("(" + str(data[i + 1, 3]) +"," + str(data[i + 1, 4]) + ") & " + srtformat.format(r) + " & " + srtformat.format(se1_val)+ "~$\pm$  " + srtformat.format(se1_err) +" & " + srtformat.format(se0) + " & " + srtformat.format(se2) + " & " + srtformat.format((se1_err**2 + (r-se2)**2)**0.5) +"\\" + "\\" )
