@@ -1,5 +1,5 @@
 # table with Lc(Yc) - events ---> | (eta_i, eta_f) | (pt_i, pt_f) | N_ev_lc_val +- N_ev_lc_err | N_ev_scpp_val +- N_ev_scpp_err | 
-import ROOT, numpy
+import numpy
 
 if __name__ == "__main__" :
  data = numpy.genfromtxt('data_nominal.csv', delimiter = ',')
