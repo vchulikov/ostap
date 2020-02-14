@@ -2,7 +2,7 @@
 import numpy
 
 if __name__ == "__main__" :
- data = numpy.genfromtxt('data_nominal.csv', delimiter = ',')
+ data = numpy.genfromtxt('data_all.csv', delimiter = ',')
  length_x = numpy.size(data, 0)
 
  for i in range(length_x - 1):
