@@ -35,16 +35,22 @@ def complex_histo_draw(file_name, val_1_col, err_1_col, val_2_col, err_2_col, va
 
   #fill histogram with bins values
   bin_val = bin_VE_2*bin_VE_4/(bin_VE_1*bin_VE_3)
+
+  #1. uncomment if one need to non-round-values
   hist_os.SetBinContent(y_bin, pt_bin, bin_val.value())
   hist_os.SetBinError(y_bin, pt_bin, bin_val.error())
   
+  #2. uncomment if one need to round-values
+  #hist_os.SetBinContent(y_bin, pt_bin, round(bin_val.value()))
+  #hist_os.SetBinError(y_bin, pt_bin, round(bin_val.error())) 
+  
   #stuff for changing bin's colors which determine by Z axis range in 2d hist
-  hist_os.SetMinimum(0.)
-  hist_os.SetMaximum(0.08)
+  #hist_os.SetMinimum(0.)
+  #hist_os.SetMaximum(0.08)
   
   #fill histogram with R-values
-  hist_array[y_bin - 1].SetBinContent(pt_bin, 100*(bin_VE_2/bin_VE_1).value())
-  hist_array[y_bin - 1].SetBinError(pt_bin, 100*(bin_VE_2/bin_VE_1).error())
+  hist_array[y_bin - 1].SetBinContent(pt_bin, 100*(bin_val.value()))
+  hist_array[y_bin - 1].SetBinError(pt_bin, 100*(bin_val.error()))
 
   pt_bin += 1
 
