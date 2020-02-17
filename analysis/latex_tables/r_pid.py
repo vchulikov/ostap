@@ -1,4 +1,4 @@
-##pt + R PID + s1 + s2 + s3 + summ_err --->latex table
+# | pt | R PID | s1 | s2 | s3 | summ_err | --->latex table
 import numpy
 
 if __name__ == "__main__" :
