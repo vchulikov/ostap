@@ -8,10 +8,11 @@ if __name__ == "__main__" :
 
  for i in range(length_x - 1):
   r = data[i + 1, 15]/data[i + 1, 16] #13, 14 in old-type data-file
-  s1 = abs(r - data[i + 1, 13]/data[i + 1, 14]) #15, 16 in old-type data-file
-  s2 = abs(r - data[i + 1, 17]/data[i + 1, 18])
-  s3 = data[i + 1, 20]
+  s1 = abs(r - data[i + 1, 20]/data[i + 1, 21]) #15, 16 in old-type data-file
+  s2 = abs(r - data[i + 1, 18]/data[i + 1, 19])
+  s3 = data[i + 1, 25]
   summ_err = (s1**2+s2**2+s3**2)**0.5
+  
   if i%10 == 0: 
    print(str("\hline"))
    print("\multicolumn{6}{c}{$y\in$~(" + str(data[i + 1, 1]) + "," + str(data[i + 1, 2])+ ")}" + "\\" + "\\")
