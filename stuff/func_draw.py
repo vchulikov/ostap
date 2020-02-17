@@ -15,7 +15,7 @@ def draw_jsu():
  
 def draw_apol2():
  im    = ROOT.RooRealVar('im', 'im', 0., 1.)
- model_apol2 = md.Apolonios2_pdf( 'Apol2', im, mean = 0.5, sigma = .05, asymmetry = 0., beta = 1.)
+ model_apol2 = md.Apollonios2_pdf( 'Apol2', im, mean = 0.5, sigma = .05, asymmetry = 0., beta = 1.)
  model_apol2.draw_options['total_fit_options'] = ROOT.RooFit.LineColor(ROOT.kGreen), ROOT.RooFit.LineWidth(5)
  model_apol2.draw()
 
