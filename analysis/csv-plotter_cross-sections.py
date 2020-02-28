@@ -69,9 +69,13 @@ if __name__ == "__main__" :
  bin_y1 = hist_design(h_y2, 419)
 
  #draw
- h_y2.Draw("e1")
- h_y1.Draw("same e1")
+ h_y1.Draw("e1")
+ h_y2.Draw("same e1")
 
+ #y - axis
+ bin_y1.SetMinimum(0.)
+ bin_y1.SetMaximum(0.1)
+ 
  #add legend
  legend = TLegend(0.9, 0.7, 0.7, 0.8)
  legend.AddEntry(bin_y1, "initial value < y < final value") #hist_array_1[0] - 2.25 - 2.75, hist_array_1[1] - 2.75...
