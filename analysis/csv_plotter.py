@@ -1,4 +1,6 @@
 import ROOT, numpy
+
+#Use : from   Ostap.PyRoUts   import * # instead ostap.... if you use Bender
 from ostap.histos.histos import h2_axes, h1_axis
 from ostap.math.ve       import VE 
 
