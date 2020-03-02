@@ -1,7 +1,10 @@
 import numpy
 from ROOT import TCanvas, TLegend
+
+#Use : from   Ostap.PyRoUts   import * # instead ostap.... if you use Bender
 from ostap.histos.histos import h2_axes, h1_axis
 from ostap.math.ve       import VE 
+
 
 def complex_histo_draw(file_name, val_1_col, err_1_col, val_2_col, err_2_col, corr_1_val): 
  #from csv to numpy-array
