@@ -19,7 +19,7 @@ def ostap_chi2():
     
     return 0
 
-
+#w.chiSquare(len(r.params()))
 if "__main__" == __name__ :
     ostap_chi2()
 
