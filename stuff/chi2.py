@@ -1,5 +1,5 @@
 import ROOT
-from   ostap.histos import compare
+from ostap.histos import compare
 
 def ostap_chi2():
     #Load TRandom3 module
