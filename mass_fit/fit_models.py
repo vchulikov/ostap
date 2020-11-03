@@ -1,7 +1,7 @@
 import ROOT
 import ostap.fitting.models as Models
-from   ostap.utils.timing import timing
-from   ostap.histos.histos  import h1_axis
+from ostap.utils.timing import timing
+from ostap.histos.histos  import h1_axis
 from ostap.core.core import cpp
 
 def fit_jsu():
